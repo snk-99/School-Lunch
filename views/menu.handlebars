@@ -1,0 +1,15 @@
+<section class="container">
+  <h3 class="gallery-name">{{menu.name}}</h3>
+  <h4> {{menu.title}}</h4>
+  <!-- If the user is logged in, render the gallery content -->
+  {{#if loggedIn}}
+  <section class="flex-row justify-center">
+    {{#each menu.meals as |meal|}}
+    {{> meal-details}}
+    {{/each}}
+  </section>
+</section>
+<!-- Otherwise, provide a link to login -->
+{{else}}
+<a href="/login">Login to view this page</a>
+{{/if}}
