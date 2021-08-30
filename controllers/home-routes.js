@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
       include: [
         {
           model: Meal,
-          attributes: ["filename", "description"],
+          // attributes: ["filename", "description"],
         },
       ],
     });
@@ -51,6 +51,18 @@ router.get("/meal/:id", async (req, res) => {
 
     const meal = dbMealData.get({ plain: true });
     res.render("meal", { meal, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get("/my-meal", async (req, res) => {
+  try {
+    const dbmyMealData = await Meal.findByPk(req.params.id);
+
+    const mymeal = dbmyMealData.get({ plain: true });
+    res.render("my-meal", { mymeal, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);

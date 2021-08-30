@@ -1,10 +1,10 @@
 :root {
-  --primary: #fce6d5;
+  --primary: #def0fcd2;
   --secondary: #b1b1b1;
-  --tertiary: #f8c6b7;
+  --tertiary: #dddddd;
   --quatrinary: #a8a69c;
-  --light: #474747;
-  --dark: #ffffff;
+  --light: #0c0c0c;
+  --dark: #292828;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
@@ -14,9 +14,9 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh;
   justify-content: flex-start;
-  background-color: var(--quatrinary);
+  background-color: var(--quatrinary); */
 }
 
 a {
@@ -41,7 +41,7 @@ main {
   flex-grow: 1;
 }
 
-aside {
+/* aside {
   width: 15%;
   padding-left: 1px;
   margin-left: 1rem;
@@ -51,7 +51,7 @@ aside {
   box-shadow: inset 5px 0 5px -5px var(--light);
   text-align: left;
   color: var(--light);
-}
+} */
 
 /* aside {
   width: 40%;
@@ -64,7 +64,7 @@ aside {
 } */
 
 nav {
-  display: justify-content-end;
+  display: inline;
   background-color: var(--secondary);
 }
 
@@ -81,11 +81,11 @@ nav a:hover {
 }
 
 .gallery {
-  flex: 4;
-  background-color: #fff;
+  background-color: rgb(216, 216, 216);
   padding: 50px;
   display: flex;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -162,7 +162,7 @@ img {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-shadow: 2px 2px 5px var(--secondary);
-  border: 10px groove var(--light);
+  /* border: 10px groove var(--light); */
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 100px;
