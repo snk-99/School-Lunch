@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Pizza",
+    "description": "Primo Four Cheese Pizza combines mozzarella, Provolone, Cheddar and Parmesan for a unique, on-trend variety students will love!",
+    "has_nuts": false,
+    "needed_funding": 5
+  },
+  {
+    "name": "Yogurt Basket",
+    "description": "Yoplait® yogurt in strawberry, vanilla or horchatta paired with string cheese.",
+    "has_nuts": false,
+    "needed_funding": 1
+  },
+  {
+    "name": "Vegetarian Sandwich",
+    "description": "Black Bean Burger or Garden Burger served on a whole grain-rich roll. 100% plant protein & delicious!",
+    "has_nuts": true,
+    "needed_funding": 4
+  }
+]

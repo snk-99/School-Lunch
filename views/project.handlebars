@@ -1,0 +1,47 @@
+
+
+
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img
+        src="https://graphicriver.img.customer.envatousercontent.com/files/305561210/preview_15410962.jpg?auto=compress%2Cformat&q=80&fit=crop&crop=top&max-h=8000&max-w=590&s=b46a59ab1fb98e7d6349f5421e0a11dc"
+        alt="..."
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 id="name">{{name}}</h5>
+        <p class="card-text" id="desc">
+          {{description}}
+        </p>
+        
+        <p>
+            {{!-- <span for="img" aria-label="money"></span> --}}
+            <span class="dollar-amount">Number of meal {{format_amount needed_funding}}</span>
+            
+        </p>
+    
+        </p>
+          {{#if has_nuts}}
+            <p class="has-nuts">
+              This student has a nut allergy
+            </p>
+          {{/if}}
+         <div class="col-md-4">
+           <button class="btn btn-sm btn-danger" data-id="{{project.id}}">DELETE</button>
+         </div>
+        <p >
+          
+        <p >
+          <h6>send to school Email</h6>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../public/js/save.js"></script>
